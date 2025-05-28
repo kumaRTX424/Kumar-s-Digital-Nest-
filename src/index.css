@@ -1,0 +1,410 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+   font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #3da0aa;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+  text-decoration: underline;
+}
+
+
+/* Hero Section */
+.hero-section {
+  background-image: url("/public/My ChatGPT image.png"); /* Correct way to access public folder */
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-shadow: black 0.1em 0.1em 0.2em, black -0.1em -0.1em 0.2em, black 0.1em -0.1em 0.2em, black -0.1em 0.1em 0.2em;
+  text-align: center;
+  padding: 100px 20px;
+  gap: 10px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-left: 900px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  margin-left: 900px;
+}
+
+.hero-button {
+  background-color:transparent ;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-left: 900px;
+  /* margin-bottom: 400px; */
+}
+
+.hero-button1{
+  background-color:transparent ;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-left: 900px;
+  margin-bottom: 400px;
+}
+.hero-button:hover {
+  background-color: #3da0aa; /* Light gray hover effect */
+}
+
+.hero-button1:hover {
+  background-color: #3da0aa; /* Light gray hover effect */
+}
+/* Optional: Smooth scroll effect for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.about-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 100px; /* Adjust this value to create space below the header */
+
+}
+
+.about-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideIn 1s ease-out forwards;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Skills section */
+.skills-section {
+  margin-top: 40px;
+}
+
+.skills-title {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.skills-list li {
+  text-align: left;
+  padding-left: 1em;
+}
+
+
+
+/* Projects Section */
+#projects {
+  padding: 80px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  color: #3da0aa;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #00b6ca;
+}
+
+/* Experience Section */
+#experience {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+}
+
+#experience h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 18px;
+}
+
+.experience-item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.experience-item ul li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Education Section */
+#education {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+#education h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.education-item {
+  margin-bottom: 30px;
+}
+
+.education-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  font-size: 18px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3da0aa;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #00b6ca;
+}
+
+/* Footer */
+footer {
+  background-color: #3da0aa;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffdd57; /* Change color on hover */
+}
+
+
+
