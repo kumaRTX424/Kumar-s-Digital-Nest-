@@ -21,7 +21,7 @@ const PortfolioProject = () => {
           <FaUserCircle className="icons" size={32} /> Personal Portfolio Website – ReactJS
         </h1>
         <p>
-          <strong>Tech Stack:</strong> ReactJS, React Router, EmailJS, Vercel
+          <strong>Tech Stack:</strong> ReactJS, React Router, EmailJS.
         </p>
         <p>
           <strong>Personal Portfolio Website</strong> is a fully functional, mobile-responsive React application created to showcase my skills, projects, and experience as a developer. It features smooth navigation, project detail pages, a live contact form, and a clean, modern UI powered by CSS3. This portfolio serves as my professional identity on the web and helps recruiters and collaborators get a complete view of my capabilities.
@@ -69,18 +69,18 @@ const PortfolioProject = () => {
           <li>
             <strong>Frontend:</strong>{" "}
             <a
-              href="https://your-portfolio-site.vercel.app/"
+              href="https://kumar-s-digital-nest.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Vercel
+              Netlify
             </a>
           </li>
         </ul>
 
         <div className="button-group">
           <a
-            href="https://your-portfolio-site.vercel.app/"
+            href="https://kumar-s-digital-nest.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
@@ -88,7 +88,7 @@ const PortfolioProject = () => {
             View Live Portfolio
           </a>
           <a
-            href="https://github.com/yourusername/portfolio"
+            href="https://github.com/kumaRTX424/Kumar-s-Digital-Nest-"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
